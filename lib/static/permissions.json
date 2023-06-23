@@ -1,0 +1,694 @@
+{
+  "Business Identities": [
+    {
+      "aclKey": "identity_business.add",
+      "label": "Identity Business Add",
+      "resource": "/businessIdentities",
+      "methods": "POST",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_business.list",
+      "label": "List Identities",
+      "resource": "/businessIdentities",
+      "methods": "GET",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_business.view",
+      "label": "View a specific Business Identity",
+      "resource": "/businessIdentities",
+      "methods": "GET",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_business.request",
+      "label": "Identity Business Request for Approval",
+      "resource": "/businessIdentities/request",
+      "methods": "PATCH",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_business.approve",
+      "label": "Identity Business Approve",
+      "resource": "/businessIdentities/approve",
+      "methods": "PATCH",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_business.reject",
+      "label": "Identity Business Reject",
+      "resource": "/businessIdentities/reject",
+      "methods": "PATCH",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_business.edit",
+      "label": "Identity Business Edit",
+      "resource": "/businessIdentities",
+      "methods": "PATCH",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_business.delete",
+      "label": "Identity Business Delete",
+      "resource": "/businessIdentities/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow",
+      "owner": "any"
+    }
+  ],
+  "Individual Identities": [
+    {
+      "aclKey": "identity_individual.add",
+      "label": "Identity Individual Add",
+      "resource": "/individualIdentities",
+      "methods": "POST",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_individual.list",
+      "label": "List Individual Identities",
+      "resource": "/individualIdentities",
+      "methods": "GET",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_individual.view",
+      "label": "View a specific Individual Identity",
+      "resource": "/individualIdentities",
+      "methods": "GET",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_individual.request",
+      "label": "Identity Individual Request for Approval",
+      "resource": "/individualIdentities/request",
+      "methods": "PATCH",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_individual.approve",
+      "label": "Identity Individual Approve",
+      "resource": "/individualIdentities/approve",
+      "methods": "PATCH",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_individual.reject",
+      "label": "Identity Individual Reject",
+      "resource": "/individualIdentities/reject",
+      "methods": "PATCH",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_individual.edit",
+      "label": "Identity Individual Edit",
+      "resource": "/individualIdentities",
+      "methods": "PATCH",
+      "action": "allow",
+      "owner": "any"
+    },
+    {
+      "aclKey": "identity_individual.delete",
+      "label": "Identity Individual Delete",
+      "resource": "/individualIdentities/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow",
+      "owner": "any"
+    }
+  ],
+  "Industries": [
+    {
+      "aclKey": "industry.add",
+      "label": "Industry Add",
+      "resource": "/industries",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "industry.list",
+      "label": "List Industries",
+      "resource": "/industries",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "industry.view",
+      "label": "Industry View",
+      "resource": "/industries/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "industry.edit",
+      "label": "Industry Edit",
+      "resource": "/industries/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "industry.delete",
+      "label": "Industry Delete",
+      "resource": "/industries/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "SubIndustries": [
+    {
+      "aclKey": "subindustry.add",
+      "label": "SubIndustry Add",
+      "resource": "/subindustries",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "subindustry.list",
+      "label": "List SubIndustries",
+      "resource": "/subindustries",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "subindustry.view",
+      "label": "SubIndustry View",
+      "resource": "/subindustries/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "subindustry.edit",
+      "label": "SubIndustry Edit",
+      "resource": "/subindustries/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "subindustry.delete",
+      "label": "SubIndustry Delete",
+      "resource": "/subindustries/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Categories": [
+    {
+      "aclKey": "category.add",
+      "label": "Category Add",
+      "resource": "/categories",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "category.list",
+      "label": "List Categories",
+      "resource": "/categories",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "category.view",
+      "label": "Category View",
+      "resource": "/categories/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "category.edit",
+      "label": "Category Edit",
+      "resource": "/categories/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "category.delete",
+      "label": "Category Delete",
+      "resource": "/categories/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "SubCategories": [
+    {
+      "aclKey": "subcategory.add",
+      "label": "SubCategory Add",
+      "resource": "/subcategories",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "subcategory.list",
+      "label": "List SubCategories",
+      "resource": "/subcategories",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "subcategory.view",
+      "label": "SubCategory View",
+      "resource": "/subcategories/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "subcategory.edit",
+      "label": "SubCategory Edit",
+      "resource": "/subcategories/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "subcategory.delete",
+      "label": "subcategory Delete",
+      "resource": "/subcategories/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Countries": [
+    {
+      "aclKey": "country.add",
+      "label": "Country Add",
+      "resource": "/countries",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "country.list",
+      "label": "List country",
+      "resource": "/countries",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "country.view",
+      "label": "Country View",
+      "resource": "/countries/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "country.edit",
+      "label": "Country Edit",
+      "resource": "/countries/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "country.delete",
+      "label": "Country Delete",
+      "resource": "/countries/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Designations": [
+    {
+      "aclKey": "designation.add",
+      "label": "Designation Add",
+      "resource": "/designations",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "designation.list",
+      "label": "List Designation",
+      "resource": "/designations",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "designation.view",
+      "label": "Designation View",
+      "resource": "/designations/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "designation.edit",
+      "label": "Designation Edit",
+      "resource": "/designations/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "designation.delete",
+      "label": "Designation Delete",
+      "resource": "/designations/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Roles": [
+    {
+      "aclKey": "role.add",
+      "label": "Role Add",
+      "resource": "/roles",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "role.list",
+      "label": "List Role",
+      "resource": "/roles",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "role.view",
+      "label": "Role View",
+      "resource": "/roles/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "role.edit",
+      "label": "Role Edit",
+      "resource": "/roles/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "role.delete",
+      "label": "Role Delete",
+      "resource": "/roles/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Product_Master": [
+    {
+      "aclKey": "product_master.add",
+      "label": "Product Master Add",
+      "resource": "/products",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_master.list",
+      "label": "List Product Master",
+      "resource": "/products",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_master.view",
+      "label": "Product Master View",
+      "resource": "/products/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_master.edit",
+      "label": "Product Master Edit",
+      "resource": "/products/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_master.search",
+      "label": "Product Master Search",
+      "resource": "/products/search",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_master.delete",
+      "label": "Product Master Delete",
+      "resource": "/products/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Product_Varieties": [
+    {
+      "aclKey": "product_variety.add",
+      "label": "Product Variety Add",
+      "resource": "/productVarieties",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_variety.list",
+      "label": "List Product Variety",
+      "resource": "/productVarieties",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_variety.view",
+      "label": "Product Variety View",
+      "resource": "/productVarieties/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_variety.edit",
+      "label": "Product Variety Edit",
+      "resource": "/productVarieties/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_variety.search",
+      "label": "Product Variety Search",
+      "resource": "/productVarieties/search",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "product_variety.delete",
+      "label": "Product Variety Delete",
+      "resource": "/productVarieties/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Service_Master": [
+    {
+      "aclKey": "service_master.add",
+      "label": "Service Master Add",
+      "resource": "/services",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_master.list",
+      "label": "List Service Master",
+      "resource": "/services",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_master.view",
+      "label": "Service Master View",
+      "resource": "/services/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_master.edit",
+      "label": "Service Master Edit",
+      "resource": "/services/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_master.search",
+      "label": "Service Master Search",
+      "resource": "/services/search",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_master.delete",
+      "label": "Service Master Delete",
+      "resource": "/services/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Service_Varieties": [
+    {
+      "aclKey": "service_variety.add",
+      "label": "Service Variety Add",
+      "resource": "/serviceVarieties",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_variety.list",
+      "label": "List Service Variety",
+      "resource": "/serviceVarieties",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_variety.view",
+      "label": "Service Variety View",
+      "resource": "/serviceVarieties/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_variety.edit",
+      "label": "Service Variety Edit",
+      "resource": "/serviceVarieties/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_variety.search",
+      "label": "Service Variety Search",
+      "resource": "/serviceVarieties/search",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "service_variety.delete",
+      "label": "Service Variety Delete",
+      "resource": "/serviceVarieties/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Segments": [
+    {
+      "aclKey": "segment.add",
+      "label": "Segment Add",
+      "resource": "/segments",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "segment.list",
+      "label": "List Segments",
+      "resource": "/segments",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "segment.view",
+      "label": "Segment View",
+      "resource": "/segments/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "segment.edit",
+      "label": "Segment Edit",
+      "resource": "/segments/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "segment.delete",
+      "label": "Segment Delete",
+      "resource": "/segments/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Titles": [
+    {
+      "aclKey": "title.add",
+      "label": "Title Add",
+      "resource": "/titles",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "title.list",
+      "label": "List Titles",
+      "resource": "/titles",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "title.view",
+      "label": "Title View",
+      "resource": "/titles/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "title.edit",
+      "label": "Title Edit",
+      "resource": "/titles/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "title.search",
+      "label": "Title Search",
+      "resource": "/titles/search",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "title.delete",
+      "label": "Title Delete",
+      "resource": "/titles/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ],
+  "Users": [
+    {
+      "aclKey": "user.add",
+      "label": "User Add",
+      "resource": "/users",
+      "methods": "POST",
+      "action": "allow"
+    },
+    {
+      "aclKey": "user.list",
+      "label": "List Users",
+      "resource": "/users",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "user.view",
+      "label": "User View",
+      "resource": "/users/:id([0-9a-f]{24})",
+      "methods": "GET",
+      "action": "allow"
+    },
+    {
+      "aclKey": "user.search",
+      "label": "User Search",
+      "resource": "/users/search",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "user.edit",
+      "label": "User Edit",
+      "resource": "/users/:id([0-9a-f]{24})",
+      "methods": "PATCH",
+      "action": "allow"
+    },
+    {
+      "aclKey": "user.delete",
+      "label": "User Delete",
+      "resource": "/users/:id([0-9a-f]{24})",
+      "methods": "DELETE",
+      "action": "allow"
+    }
+  ]
+}
